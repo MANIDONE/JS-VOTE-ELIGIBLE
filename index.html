@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <input type="text"  placeholder="enter the age" id="age" >
+   <button onclick="check()">check</button>
+    <h1 id="h1"></h1>   
+    
+        
+        
+   <script>
+    
+    
+    function check(){
+      var age=document.getElementById("age")
+    var h1=document.getElementById("h1")
+    var age1=Number(age.value)
+    if(age1>=18){
+      console.log("eligible for vote")
+      h1.textContent="eligible for vote"
+    }
+    else{
+      console.log("not eligible for vote")
+      h1.textContent="not eligible for vote"
+      
+    }
+  }
+
+   </script>
+
+
+
+</body>
+</html>
